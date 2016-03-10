@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Periodic Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+    <link rel="stylesheet" href="css/chemistry.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+
+    
+
+
+ <style>
+
+</style>
+</head>
+<body data-ng-app="chemistryApp">
+
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+
+  <main>    
+    <div  data-ng-controller="chemistryController">
+        <h1>Periodic Elements</h1>
+            <section >
+                <div class="container" data-theme="2016-clean">
+                    <div >
+                        <div data-ng-repeat="element in elements">
+                            <periodic-chart-element element="element">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+  </main>
+
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+
+<script type="text/javascript" src="scripts/chemistryApp.js"></script>
+<script type="text/javascript" src="scripts/chemistryController.js"></script>
+<script type="text/javascript" src="scripts/chemistryDirective.js"></script>
+<script type="text/javascript" src="scripts/chemistryService.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+</body>
+</html>

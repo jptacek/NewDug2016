@@ -1,0 +1,51 @@
+<!--<img class="card-img-top img-responsive" ng-src="/images/wikiMedia/{{element.atomicNumber}}.jpg"  alt="{{element.name}} image"/>-->
+
+<!--<img class="card-img-top circle" ng-src="/images/wikiMedia/{{element.atomicNumber}}.jpg" onerror="this.src='/images/wikiMedia/1.jpg'"
+  alt="{{element.name}} image">-->
+<div class="card" ng-hide="fullElement">
+    <div class=" {{element.cssForDisplay}}">
+        <div class="card-block">
+            <h4 class="card-title">{{element.name}}</h4>
+            <p class="card-text"><b>Atomic Number: </b>{{element.atomicNumber}}
+                <br/>
+                <b>Atomic Symbol: </b>{{element.symbol}}
+                <br/>
+                <b>Atomic Weight: </b>{{element.atomicWeight}} </p>
+        </div>
+    </div>
+</div>
+
+<div class="card" ng-hide="!fullElement">
+    <div class=" {{element.cssForDisplay}}">
+        <div class="card-block">
+            <h4 class="card-title">{{element.name}}</h4>
+            <p class="card-text"><b>Atomic Number: </b>{{element.atomicNumber}}
+                <br/>
+                <b>Atomic Symbol: </b>{{element.symbol}}
+                <br/>
+                <b>Atomic Weight: </b>{{element.atomicWeight}} 
+                <br/>
+                <b>Atomic Weight: </b>{{element.atomicWeight}} 
+                <br/>
+                <b>Phase: </b>{{element.phase}} 
+                <br/>
+                <b>Ionization: </b>{{element.ionization}}
+                <br/>
+                <b>melting: </b>{{element.melting}}
+                <br/>
+                <b>boiling: </b>{{element.boiling}}
+                <br/>
+                <b>Density: </b>{{element.density}}
+                <br/>
+                <b>Type: </b>{{element.type}}
+                <br/>
+                <b>Electron: </b>{{element.elecconfig}}
+                </br>
+                <div class="imgContainer">
+                <img  ng-src="/images/wikiMedia/{{element.atomicNumber}}.jpg" onerror="this.src='/images/wikiMedia/1.jpg'"
+  alt="{{element.name}} image" class="center">
+  </div>
+                </p> 
+        </div>
+    </div>
+</div>

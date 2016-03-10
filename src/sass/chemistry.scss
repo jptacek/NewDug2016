@@ -1,0 +1,176 @@
+// Mixins
+@mixin transition($args) {
+  -webkit-transition: $args;
+          transition: $args;
+}
+
+@mixin transform($args) {
+  -webkit-transform: $args;
+      -ms-transform: $args;
+          transform: $args;
+}
+
+@mixin transform-origin($args) {
+  -webkit-transform-origin: $args;
+      -ms-transform-origin: $args;
+          transform-origin: $args;
+}
+
+// varaibles
+$reduceBaseSize: .6;
+$cellFontSize-Medium: 2px;
+$detailFontSize-Medium: $cellFontSize-Medium * $reduceBaseSize;
+
+// small table
+$cellFontSize-Tablet: $cellFontSize-Medium + 7px;
+$detailFontSize-Tablet: $cellFontSize-Tablet -2px;
+
+//tablet landscpe
+$cellFontSize-Landscape: $cellFontSize-Medium + 11px;
+$detailFontSize-Landscape: $cellFontSize-Landscape * $reduceBaseSize;
+
+//Normal size - 992 min width
+$cellFontSize-Normal: $cellFontSize-Medium + 13px;
+$detailFontSize-Normal: $cellFontSize-Normal * $reduceBaseSize;
+
+//Large size - 1200 min width
+$cellFontSize-Large: $cellFontSize-Medium + 21px;
+$detailFontSize-Large: $cellFontSize-Large * $reduceBaseSize;
+
+
+// Styles
+body {
+  font-family: Arial;
+  @include transform( translateZ(0)); // prevent flashing
+}
+
+.periodic {
+  position: relative;
+  height: 200px;
+  margin-right: -1px;
+  text-shadow: none;
+}
+.periodicPop {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  height: 250px;
+  z-index: 999;
+}
+.periodic-row {
+  clear: both;
+	  height: 10%;
+}
+
+.cell {
+  float: left;
+  position: relative;
+  width: 5.55%;
+  height: 100%;
+}
+
+@mixin element {
+  text-align: center;
+}
+
+.at_num,
+.at_details,
+.at_weight,  {
+  position: absolute;
+  font-size: $detailFontSize-Medium;
+  color: rgba(0,0,0,0.7);
+  opacity: 0;
+}
+
+.at_num {
+  top: 4px;
+  left: 5px;
+}
+
+.at_weight {
+  top: 4px;
+  right: 5px;
+}
+
+
+.symbol {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin-top: -4px;
+  font-size: $cellFontSize-Medium;
+  line-height: 1;
+  height: 9px;
+  color: rgba(0,0,0,0.9);
+}
+
+.at_details {
+  bottom: 4px;
+  left: 0px;
+  right: 0px;
+}
+.metalloids {
+  background-color: aqua;
+  @include element;
+}
+.alkaliMetal {
+  background-color: grey;
+  @include element;
+}
+.nonMetal {
+  background-color: forestgreen;
+  @include element;
+}
+.nobleGas {
+  background-color: darkorange;
+  @include element;
+}
+.halogen {
+  background-color: yellow;
+  @include element;
+}
+.alkalineEarth {
+  background-color: orangered;
+  @include element;
+}
+.lathanoids {
+  background-color: coral;
+  @include element;
+}
+.actinoids {
+  background-color: lightcoral;
+  @include element;
+}
+.poorMetal {
+  background-color: mediumpurple;
+  @include element;
+
+}
+
+
+//image display
+.circle {
+    -webkit-clip-path: circle(75px at 50% 50%);
+    clip-path: circle(75px at 50% 50%)
+}
+
+.imgContainer {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.imgContainer img {
+    width: 100%;
+    height: auto;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

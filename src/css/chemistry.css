@@ -1,0 +1,117 @@
+body {
+  font-family: Arial;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.periodic {
+  position: relative;
+  height: 200px;
+  margin-right: -1px;
+  text-shadow: none; }
+
+.periodicPop {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  height: 250px;
+  z-index: 999; }
+
+.periodic-row {
+  clear: both;
+  height: 10%; }
+
+.cell {
+  float: left;
+  position: relative;
+  width: 5.55%;
+  height: 100%; }
+
+.at_num,
+.at_details,
+.at_weight {
+  position: absolute;
+  font-size: 1.2px;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0; }
+
+.at_num {
+  top: 4px;
+  left: 5px; }
+
+.at_weight {
+  top: 4px;
+  right: 5px; }
+
+.symbol {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin-top: -4px;
+  font-size: 2px;
+  line-height: 1;
+  height: 9px;
+  color: rgba(0, 0, 0, 0.9); }
+
+.at_details {
+  bottom: 4px;
+  left: 0px;
+  right: 0px; }
+
+.metalloids {
+  background-color: aqua;
+  text-align: center; }
+
+.alkaliMetal {
+  background-color: grey;
+  text-align: center; }
+
+.nonMetal {
+  background-color: forestgreen;
+  text-align: center; }
+
+.nobleGas {
+  background-color: darkorange;
+  text-align: center; }
+
+.halogen {
+  background-color: yellow;
+  text-align: center; }
+
+.alkalineEarth {
+  background-color: orangered;
+  text-align: center; }
+
+.lathanoids {
+  background-color: coral;
+  text-align: center; }
+
+.actinoids {
+  background-color: lightcoral;
+  text-align: center; }
+
+.poorMetal {
+  background-color: mediumpurple;
+  text-align: center; }
+
+.circle {
+  -webkit-clip-path: circle(75px at 50% 50%);
+  clip-path: circle(75px at 50% 50%); }
+
+.imgContainer {
+  width: 200px;
+  height: 120px; }
+
+/* resize images */
+.imgContainer img {
+  width: 100%;
+  height: auto; }
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
