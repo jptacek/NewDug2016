@@ -1,0 +1,21 @@
+{
+  "name": "NewDug 2016",
+  "version": "0.0.0",
+  "authors": [
+    "John Ptacek <jptacek@live.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-route": "~1.4.2",
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
