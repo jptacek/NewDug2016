@@ -6,7 +6,7 @@ Presentation to 2016 [NewDug Code Camp](http://newcodecamp.com/) on March 12, 20
 2. bower install
 
 ## Slides ##
-[PowerPoint slides](ppt/GulpAllTheThings.pptx) from presentation
+[PowerPoint slides](https://github.com/jptacek/NewDug2016/blob/master/PPT/GulpAllTheThings.pptx?raw=true) from presentation
 
 ##Demos##
 **Demo 1**- Introduct the gulp.task API and run _gulp taskTheFirst_ demonstrates a simple task
