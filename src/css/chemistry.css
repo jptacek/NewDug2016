@@ -63,7 +63,7 @@ body {
   right: 0px; }
 
 .metalloids {
-  background-color: aqua;
+  background-color: forestgreen;
   text-align: center; }
 
 .alkaliMetal {
@@ -71,7 +71,7 @@ body {
   text-align: center; }
 
 .nonMetal {
-  background-color: forestgreen;
+  background-color: aqua;
   text-align: center; }
 
 .nobleGas {
@@ -115,3 +115,6 @@ img.center {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.style-text {
+  transform-origin: center bottom; }
